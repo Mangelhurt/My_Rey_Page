@@ -3,81 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Bootstrap -->
     <link
-      href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- styles -->
-    <link rel="stylesheet" href="/Front/src/styles/reset.css" />
-    <link rel="stylesheet" href="/Front/src/styles/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Mi Rey</title>
   </head>
+  <!-------------------------------------------------------------------------Body---------------------------------------------------------------------->
   <body>
-    <header class="header">
-      <figure>
-        <img class="logo" src="/Front/public/Icons/lolo.png" alt="Logo" />
-        <div class="div-textlogo">
-          <figcaption class="logo-textMirey">Mi Rey</figcaption>
-          <figcaption class="logo-textdigalaverdad">Diga La Verdad</figcaption>
-        </div>
-      </figure>
-      <nav class="navegation">
-        <ul class="navegation-list">
-          <li class="item-list">Home</li>
-          <li class="item-list">Catalogo</li>
-          <li class="item-list">Contac Us</li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main">
-      <section class="wellcome">
-        <div class="image-bg"></div>
-      </section>
-      <nav class="proncipal-main">
-        <figure class="catalog">
-          <div>
-            <img src="" alt="viewport" />
-          </div>
-          <div class="catalog-img">
-            <img src="" alt="image1" />
-            <img src="" alt="image2" />
-            <img src="" alt="image3" />
-            <img src="" alt="image4" />
-          </div>
-        </figure>
-        <article class="proncipal-article">
-          <h1 id="miRey">Mi rey</h1>
-          <span class="span">Diga la Verdad</span>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-            eum consectetur nulla suscipit amet commodi dignissimos laudantium
-            quam. Iure velit quam earum quo commodi adipisci temporibus aperiam
-            repellat atque exercitationem?
-          </p>
-        </article>
-        <section>
-          <figure>
-            <img src="" alt="imagen representativa" />
-          </figure>
-        </section>
-        <footer>
-          <ul>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>mail</li>
+    <!-- Barra de navegación con Bootstrap -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-lg">
+        <!-- Logo o título -->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="/Front/public/Icons/lolo.png"
+            alt="Logo"
+            width="75"
+            height="75"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+
+        <!-- Botón para móviles -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links de navegación -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
           </ul>
-        </footer>
-      </nav>
-    </main>
+        </div>
+      </div>
+    </nav>
   </body>
 </html>
