@@ -2,15 +2,18 @@ const btn = document.getElementById('menu-btn');
 const menu = document.getElementById('menu');
 
 function openMenu() {
-  menu.classList.remove('hidden');
-  menu.classList.add('menu-mobile');
+  menu.classList.remove('hidden');       // quita display:none
+  menu.classList.add('menu-mobile');     // aplica estilo móvil
+  setTimeout(() => menu.classList.add('show'), 10); // activa transición
   btn.setAttribute('aria-expanded', 'true');
 }
 
 function closeMenu() {
-  menu.classList.add('hidden');
-  menu.classList.remove('menu-mobile');
-  btn.setAttribute('aria-expanded', 'false');
+  menu.classList.remove('show');
+  setTimeout(() => {
+    menu.classList.remove('menu-mobile');
+    menu.classList.add('hidden');
+  }, 300);
 }
 
 btn.addEventListener('click', (e) => {
@@ -33,11 +36,11 @@ document.addEventListener('keydown', (e) => {
 
 // asegurar estado correcto en resize
 window.addEventListener('resize', () => {
-  if (window.innerWidth >= 640) { // >= sm
+  if (window.innerWidth >= 640) { 
     menu.classList.remove('menu-mobile');
     menu.classList.remove('hidden');
     btn.setAttribute('aria-expanded', 'false');
   } else {
-    menu.classList.add('hidden'); // por defecto en móvil
+    menu.classList.add('hidden');
   }
 });

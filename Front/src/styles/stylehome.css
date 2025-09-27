@@ -1,12 +1,20 @@
 .menu-mobile {
-  display: flex;
   position: absolute;
-  top: 4rem;      /* top-16 en Tailwind (16 * 0.25rem = 4rem) */
-  right: 1rem;    /* right-4 = 1rem */
-  background-color: #111827; /* bg-gray-900 */
-  padding: 1rem;  /* p-4 */
-  border-radius: 0.5rem; /* rounded-lg */
+  top: 4rem;
+  right: 1rem;
+  background-color: #b45309;
+  padding: 1rem;
+  border-radius: 0.5rem;
   flex-direction: column;
-  gap: 1rem;      /* gap-4 */
+  gap: 1rem;
   z-index: 50;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  display: flex;
+}
+
+.menu-mobile.show {
+  opacity: 1;
+  transform: scale(1);
 }
