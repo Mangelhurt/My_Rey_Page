@@ -13,35 +13,36 @@
 <!-------------------------------------------------------------------------Body---------------------------------------------------------------------->
 
 <body class="bg-gray-100">
-
+<header>
   <!-- Navbar con Tailwind -->
-
   <nav class="bg-amber-600 text-white">
     <div class="container mx-auto flex items-center justify-between px-4 py-3">
       <!-- Logo -->
       <a href="index.html" class="flex items-center">
         <img src="/Front/public/Icons/lolo.png" alt="Logo"
-          class="size-20 object-contain transform transition-transform duration-300 hover:scale-110" />
+        class="size-20 object-contain transform transition-transform duration-300 hover:scale-110" />
       </a>
-
+      
       <!-- Botón móvil -->
       <button id="menu-btn" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú de navegación"
-        class="sm:hidden flex items-center px-3 py-2 border rounded border-white text-gray-200 hover:text-white hover:bg-amber-700 transition-colors duration-300">
-        <svg class="fill-current h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <title>Menu</title>
-          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-        </svg>
-      </button>
-
-      <!-- Links de navegación -->
-      <ul id="menu" class="hidden sm:flex flex-col sm:flex-row gap-4 sm:gap-6 mt-4 sm:mt-0">
-        <li><a href="index.html" class="hover:text-slate-950">Home</a></li>
-        <li><a href="contact.html" class="hover:text-slate-950">Contact Us</a></li>
-        <li><a href="products.html" class="hover:text-slate-950">Products</a></li>
-      </ul>
-    </div>
-  </nav>
-  <script src="./scripts/index.js"></script>
+      class="sm:hidden flex items-center px-3 py-2 border rounded border-white text-gray-200 hover:text-white hover:bg-amber-700 transition-colors duration-300">
+      <svg class="fill-current h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <title>Menu</title>
+        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+      </svg>
+    </button>
+    
+    <!-- Links de navegación -->
+    <ul id="menu" class="hidden sm:flex flex-col sm:flex-row gap-4 sm:gap-6 mt-4 sm:mt-0">
+      <li><a href="#" class="hover:text-slate-950">Home</a></li>
+      <li><a href="/Front/src/pages/aboutUs.html" class="hover:text-slate-950">About Us</a></li>
+      <li><a href="/Front/src/pages/contacUs.html" class="hover:text-slate-950">Contact Us</a></li>
+      <li><a href="products.html" class="hover:text-slate-950">Products</a></li>
+    </ul>
+  </div>
+</nav>
+</header>
+<script src="./scripts/index.js"></script>
 </body>
 
 </html>

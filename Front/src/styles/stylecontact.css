@@ -1,0 +1,46 @@
+/* styles/stylecontact.css */
+
+/* Fuente retro para el título "¡Hola!" */
+h1 {
+  font-family: 'Brush Script MT', cursive;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 5rem;
+  color: #14532d; /* verde oscuro */
+}
+
+/* Personalizar los placeholders */
+::placeholder {
+  color: #14532d; /* verde oscuro */
+  opacity: 0.8;
+}
+
+/* Inputs y textarea al foco */
+input:focus, textarea:focus, select:focus {
+  border-color: #b45309; /* amber-700 */
+  outline: none;
+}
+
+/* Fondo del formulario con textura suave */
+.form-container {
+  background-color: rgba(255, 255, 255, 0.7); /* efecto translúcido */
+  backdrop-filter: blur(4px); /* difuminar fondo */
+  padding: 2.5rem; /* equivalente a p-10 en Tailwind */
+  border-radius: 1rem; /* rounded-2xl */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* sombra */
+}
+
+/* Botón enviar */
+button[type="submit"] {
+  background-color: #b45309; /* amber-700 */
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #92400e; /* amber-800 */
+}
