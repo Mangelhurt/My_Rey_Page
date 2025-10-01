@@ -13,36 +13,57 @@
 <!-------------------------------------------------------------------------Body---------------------------------------------------------------------->
 
 <body class="bg-gray-100">
-<header>
-  <!-- Navbar con Tailwind -->
-  <nav class="bg-amber-600 text-white">
-    <div class="container mx-auto flex items-center justify-between px-4 py-3">
-      <!-- Logo -->
-      <a href="index.html" class="flex items-center">
-        <img src="/Front/public/Icons/lolo.png" alt="Logo"
-        class="size-20 object-contain transform transition-transform duration-300 hover:scale-110" />
-      </a>
-      
-      <!-- Botón móvil -->
-      <button id="menu-btn" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú de navegación"
-      class="sm:hidden flex items-center px-3 py-2 border rounded border-white text-gray-200 hover:text-white hover:bg-amber-700 transition-colors duration-300">
-      <svg class="fill-current h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-        <title>Menu</title>
-        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-      </svg>
-    </button>
-    
-    <!-- Links de navegación -->
-    <ul id="menu" class="hidden sm:flex flex-col sm:flex-row gap-4 sm:gap-6 mt-4 sm:mt-0">
-      <li><a href="#" class="hover:text-slate-950">Home</a></li>
-      <li><a href="/Front/src/pages/aboutUs.html" class="hover:text-slate-950">About Us</a></li>
-      <li><a href="/Front/src/pages/contacUs.html" class="hover:text-slate-950">Contact Us</a></li>
-      <li><a href="products.html" class="hover:text-slate-950">Products</a></li>
-    </ul>
-  </div>
-</nav>
-</header>
-<script src="./scripts/index.js"></script>
+  <header>
+    <!-- Navbar con Tailwind -->
+    <nav class="bg-amber-600 text-white">
+      <div class="container mx-auto flex items-center justify-between px-4 py-3">
+
+        <!-- Logo izquierda -->
+        <a href="index.html" class="flex items-center">
+          <img src="/Front/public/Icons/lolo.png" alt="Logo"
+            class="size-20 object-contain transform transition-transform duration-300 hover:scale-110" />
+        </a>
+
+        <!-- Centro: Links principales -->
+        <ul class="hidden sm:flex gap-6 text-lg font-medium">
+          <li><a href="#" class="hover:text-slate-950">Home</a></li>
+          <li><a href="./pages/aboutUs.html" class="hover:text-slate-950">About Us</a></li>
+          <li><a href="/Front/src/pages/products.html" class="hover:text-slate-950">Products</a></li>
+        </ul>
+
+        <!-- Derecha: Contacto destacado -->
+        <div class="hidden sm:flex">
+          <a href="./pages/contacUs.html"
+            class="bg-white text-amber-700 font-bold px-4 py-2 rounded-lg shadow-md hover:bg-amber-700 hover:text-white transition">
+            Contact Us
+          </a>
+        </div>
+
+        <!-- Botón móvil -->
+        <button id="menu-btn"
+          class="sm:hidden flex items-center px-3 py-2 border rounded border-white text-gray-200 hover:text-white hover:bg-amber-700 transition-colors duration-300"
+          aria-controls="menu" aria-expanded="false" aria-label="Abrir menú de navegación">
+          <svg class="fill-current h-5 w-5" viewBox="0 0 20 20">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+
+      </div>
+
+      <!-- Menú móvil desplegable -->
+      <div id="menu" class="sm:hidden hidden flex-col gap-4 px-4 py-3 bg-amber-700">
+        <a href="#" class="hover:text-slate-950">Home</a>
+        <a href="./pages/aboutUs.html" class="hover:text-slate-950">About Us</a>
+        <a href="." class="hover:text-slate-950">Products</a>
+        <a href="./pages/contacUs.html"
+          class="bg-white text-amber-700 font-bold px-4 py-2 rounded-lg shadow-md hover:bg-amber-800 hover:text-white transition">
+          Contact Us
+        </a>
+      </div>
+    </nav>
+  </header>
+  <script src="./scripts/index.js"></script>
 </body>
 
 </html>
