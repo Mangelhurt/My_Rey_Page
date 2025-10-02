@@ -1,5 +1,7 @@
 const btn = document.getElementById('menu-btn');
 const menu = document.getElementById('menu');
+const currentPath = window.location.pathname;
+const navLinks = document.querySelectorAll('nav a:not(.logo-link)');
 
 function openMenu() {
   menu.classList.remove('hidden');       // quita display:none
@@ -42,5 +44,12 @@ window.addEventListener('resize', () => {
     btn.setAttribute('aria-expanded', 'false');
   } else {
     menu.classList.add('hidden');
+  }
+});
+
+//----------------------------------deteccion de url-----//
+navLinks.forEach(link => {
+  if (link.href.includes(currentPath)) {
+    link.classList.add("active");
   }
 });

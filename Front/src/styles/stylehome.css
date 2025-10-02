@@ -18,3 +18,12 @@
   opacity: 1;
   transform: scale(1);
 }
+
+nav a.active {
+  display: inline-block;           /* la caja se ajusta al texto */
+  text-decoration: underline;      /* subrayado */
+  text-decoration-thickness: 2px;  /* grosor */
+  text-underline-offset: 4px;      /* separación de la línea */
+  font-weight: bold;
+  color: #fff;
+}
